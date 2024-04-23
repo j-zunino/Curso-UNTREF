@@ -5,13 +5,17 @@
   margin: 0;
 }
 
+.shadow {
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 25%);
+}
+
 .top {
   background-color: #d1891c;
   padding: 5px;
 }
 .top > p {
   color: #333;
-  font-size: 18px;
+  font-size: 15px;
   position: relative;
   left: 20px;
 }
@@ -23,7 +27,79 @@
 .header > p {
   color: #fff;
   position: relative;
-  font-size: 52px;
+  font-size: 32px;
   font-weight: 300;
   left: 20px;
+  padding: 10px 0;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  max-width: 400px;
+  top: 50px;
+  margin: 50px;
+}
+.card_bg img {
+  width: 100%;
+  display: block;
+}
+
+.heart {
+  cursor: pointer;
+  position: absolute;
+  width: 40px;
+  top: 10px;
+  left: 10px;
+}
+
+.profile_picture {
+  position: absolute;
+  display: block;
+  z-index: 5;
+  top: 20%;
+  left: 28%;
+  height: 173px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.profile_picture img {
+  width: 100%;
+  height: 100%;
+}
+
+article {
+  position: relative;
+  background-color: #f3f3f3;
+  padding: 60px 20px 20px;
+}
+article > h2 {
+  font-size: 34px;
+  font-weight: 400;
+  text-align: center;
+  padding: 50px 0 10px 0;
+}
+article > p {
+  font-size: 18px;
+}
+article > a {
+  color: #f3f3f3;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00669f;
+  display: block;
+  border-radius: 7px;
+  padding: 15px 50px;
+  margin: 20px auto;
+  width: fit-content;
+}
+article > a:hover {
+  background-color: #006dac;
 }
