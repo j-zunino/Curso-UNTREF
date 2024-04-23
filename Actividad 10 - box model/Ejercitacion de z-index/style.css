@@ -1,0 +1,16 @@
+div {
+  width: 20px;
+  height: 20px;
+}
+.amarillo {
+  background-color: yellow;
+  position: relative;
+  top: 20px;
+  z-index: 1;
+}
+
+.rojo {
+  background-color: red;
+  position: relative;
+  z-index: 10;
+}

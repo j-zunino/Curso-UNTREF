@@ -1,0 +1,24 @@
+<!-- Tenemos un <article> con dos etiquetas <div> adentro. Queremos que esos dos elementos se superpongan y empezar a jugar con la propiedad z-index.
+
+Para eso, debemos mover el <div> con clase "amarillo" 20px desde arriba en relación a su posición original. Una vez que hagamos esos pasos, queremos enviar la respuesta para ver el resultado en el navegador. ¿Qué pasó?
+
+Pareciera10px;la caja roja desapareció, pero no es así. Vayamos con el último paso para resolver el ejercicio:
+
+Deberemos asignarle la propiedad z-index con valor 10 al <div> con clase "rojo". Recordemos declarar también la propiedad position:relative —sin declarar esto, no podemos utilizar z-index—.
+
+Una vez resuelto el ejercicio, podemos cambiar el valor de z-index para ver qué pasa y comparar resultados. -->
+
+<html>
+  <head>
+    <title>Z-index</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <article>
+      <div class="amarillo"></div>
+      <div class="rojo"></div>
+    </article>
+  </body>
+</html>
