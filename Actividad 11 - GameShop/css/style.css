@@ -6,6 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
 }
 
 header {
@@ -67,7 +68,6 @@ header {
   text-align: center;
   margin-top: 50px;
 }
-
 #banner span {
   font-size: 40px;
   font-weight: bold;
@@ -84,4 +84,41 @@ header {
 }
 #banner a:hover {
   background-color: #da1d21;
+}
+
+#featured_products {
+  text-align: center;
+}
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  margin: 40px 0 5px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 15px;
+  display: inline-block;
+  cursor: pointer;
+}
+.card img {
+  padding: 30px 70px;
+}
+.details {
+  text-align: left;
+  border-top: 1px solid #22222228;
+  padding: 30px;
+}
+.price {
+  font-size: 25px;
+  font-weight: normal;
+  padding: 0px 0px 5px;
+}
+.fees {
+  font-size: 16px;
+}
+.shipping {
+  font-size: 13px;
+  color: #619d00;
 }
