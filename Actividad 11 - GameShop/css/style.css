@@ -122,19 +122,19 @@ h1 {
   font-size: 13px;
   color: #619d00;
 }
+
 #star_products > h2 {
   font-weight: normal;
   font-size: 30px;
   margin: 40px 0 5px;
 }
-
 .products_banner h2 {
   color: #f3f3f3;
   font-weight: normal;
   text-align: right;
   padding: 60px 5px;
   border-radius: 5px;
-  margin: 15px 5%;
+  margin: 15px 4%;
   width: 90%;
   max-width: 360px;
   display: inline-block;
