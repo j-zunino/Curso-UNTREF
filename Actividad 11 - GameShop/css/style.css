@@ -16,7 +16,10 @@ header {
   width: 100vw;
   top: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,7 +68,7 @@ header {
   background: url(../img/banners/banner.png);
   background-size: cover;
   background-position: center;
-  padding: 30vh 0vh;
+  padding: 35vh 0vh;
   margin-top: 50px;
 }
 #banner span {
@@ -119,20 +122,21 @@ h1 {
   font-size: 13px;
   color: #619d00;
 }
-
 #star_products > h2 {
   font-weight: normal;
   font-size: 30px;
   margin: 40px 0 5px;
 }
+
 .products_banner h2 {
   color: #f3f3f3;
   font-weight: normal;
   text-align: right;
   padding: 60px 5px;
   border-radius: 5px;
-  margin: 0px 50px 50px 50px;
-  width: 376px;
+  margin: 15px 5%;
+  width: 90%;
+  max-width: 360px;
   display: inline-block;
   cursor: pointer;
 }
@@ -145,4 +149,27 @@ h1 {
   background: url(../img/banners/pc.png);
   background-size: cover;
   background-position: center;
+}
+
+.footer_container {
+  display: flex;
+  background-color: #222;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  margin-top: 50px;
+}
+.socials h2 {
+  font-weight: normal;
+  color: #f3f3f3;
+}
+.socials img {
+  cursor: pointer;
+  margin: 3px;
+  padding: 10px;
+}
+footer > div {
+  background-color: #c4c4c4;
+  font-size: 14px;
+  padding: 5px;
 }
