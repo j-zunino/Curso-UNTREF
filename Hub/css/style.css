@@ -97,3 +97,15 @@ details a:hover {
 details article {
   margin-bottom: 25px;
 }
+
+footer {
+  background-color: var(--lgray);
+  margin-top: 200px;
+}
+
+footer img {
+  width: 100px;
+  align-content: center;
+  margin: 0 auto;
+  display: flex;
+}
