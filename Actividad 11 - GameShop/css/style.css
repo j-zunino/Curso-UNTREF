@@ -12,6 +12,7 @@ header {
   background-color: #222;
   position: fixed;
   width: 100vw;
+  top: 0;
 }
 
 .header {
@@ -29,11 +30,11 @@ header {
 .logo img {
   margin-right: 15px;
 }
-.logo .text_white {
+.text_white {
   color: #f3f3f3;
   font-weight: bold;
 }
-.logo .text_red {
+.text_red {
   color: #d01418;
 }
 
@@ -56,4 +57,31 @@ header {
 .cart {
   margin: 0 20px 0 35px;
   display: flex;
+}
+
+#banner {
+  background: url(../img/banners/banner.png);
+  background-size: cover;
+  background-position: center;
+  padding: 30vh 0vh;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#banner span {
+  font-size: 40px;
+  font-weight: bold;
+}
+#banner a {
+  background-color: #d01418;
+  text-decoration: none;
+  color: #f3f3f3;
+  padding: 15px 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+}
+#banner a:hover {
+  background-color: #da1d21;
 }
