@@ -7,6 +7,7 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #f3f3f3;
+  text-align: center;
 }
 
 header {
@@ -65,7 +66,6 @@ header {
   background-size: cover;
   background-position: center;
   padding: 30vh 0vh;
-  text-align: center;
   margin-top: 50px;
 }
 #banner span {
@@ -86,9 +86,6 @@ header {
   background-color: #da1d21;
 }
 
-#featured_products {
-  text-align: center;
-}
 h1 {
   font-size: 30px;
   font-weight: normal;
@@ -121,4 +118,31 @@ h1 {
 .shipping {
   font-size: 13px;
   color: #619d00;
+}
+
+#star_products > h2 {
+  font-weight: normal;
+  font-size: 30px;
+  margin: 40px 0 5px;
+}
+.products_banner h2 {
+  color: #f3f3f3;
+  font-weight: normal;
+  text-align: right;
+  padding: 60px 5px;
+  border-radius: 5px;
+  margin: 0px 50px 50px 50px;
+  width: 376px;
+  display: inline-block;
+  cursor: pointer;
+}
+.product_chair {
+  background: url(../img/banners/chair.png);
+  background-size: cover;
+  background-position: center;
+}
+.product_pc {
+  background: url(../img/banners/pc.png);
+  background-size: cover;
+  background-position: center;
 }
