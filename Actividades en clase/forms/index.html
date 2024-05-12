@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <script src="./js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
+    <!-- Modifica el titulo del documento -->
+    <title>Documento</title>
+  </head>
+  <body>
+    <form
+      action="resultado.html"
+      method="post">
+      <h1>Registro de usuario</h1>
+      <label for="user">Usuario y contraseña</label>
+      <input
+        type="text"
+        name="user"
+        id="user" />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email" />
+
+      <label for="password">Contraseña</label>
+      <input
+        type="password"
+        name="password"
+        id="password" />
+      <button type="reset">Resetear</button>
+      <button type="submit">Enviar</button>
+
+      <label for="intereses">Cuales son tus intereses?</label>
+      <input
+        type="checkbox"
+        name="intereses[]"
+        id="musica"
+        value="musica" />
+      Música
+
+      <input
+        type="checkbox"
+        name="intereses"
+        id="pintura"
+        value="pintura" />
+      Pintura
+      <input
+        type="checkbox"
+        name="intereses"
+        id="juegos" />
+      Juegos
+    </form>
+  </body>
+</html>
