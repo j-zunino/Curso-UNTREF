@@ -46,12 +46,12 @@ nav ul {
   list-style: none;
   justify-content: flex-end;
   background-color: var(--dark-blue);
-  padding: 5px;
+  padding: 0.3125rem;
 }
 nav a {
   text-decoration: none;
   color: var(--white);
-  padding: 10px;
+  padding: 0.625rem;
   transition: 0.2s;
 }
 nav a:hover {
@@ -59,20 +59,20 @@ nav a:hover {
 }
 
 .add_button_container {
-  display: flex;
-  justify-content: center;
+  padding: 3.125rem;
 }
 .add_button {
   background-color: var(--blue);
   border-radius: 50%;
-  padding: 1.25rem;
+  padding: 1.875rem;
   z-index: 2;
-  height: 0.625rem;
+  height: 1.25rem;
   cursor: pointer;
+  background-color: var(--blue);
 }
 .add_button > a {
   color: #fff;
-  font-size: 1.25rem;
+  font-size: 1.875rem;
   position: relative;
   bottom: 0.375rem;
   text-decoration: none;
@@ -84,6 +84,7 @@ nav a:hover {
 .card-container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   /* max-width: 1000px; */
   margin: 0 auto;
@@ -175,4 +176,9 @@ footer > img {
   position: absolute;
   right: 1.25rem;
   width: 9.375rem;
+}
+
+from {
+  display: flex;
+  flex-direction: column;
 }

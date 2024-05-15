@@ -38,18 +38,72 @@
       <form
         action="#"
         method="get">
-        <label for="name">*Nombre</label>
+        <label for="name">Nombre</label>
         <input
           type="text"
           name="name"
-          id="name" />
-        <label for="specie">*Especie</label>
+          id="name"
+          required />
+        <label for="specie">Especie</label>
         <select
           name="specie"
           id="specie"
-          aria-placeholder="Especie">
+          aria-placeholder="Especie"
+          required>
           <option value="1">asd</option>
         </select>
+
+        <label for="date">Fecha</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          required />
+
+        <label for="file">Agregar una imagen</label>
+        <input
+          type="file"
+          name="file"
+          id="file"
+          required />
+
+        <textarea
+          name="text_area"
+          id="text_area"
+          placeholder="Descripción"></textarea>
+
+        <label for="checkbox">Poderes</label>
+        <input
+          type="checkbox"
+          name="volar"
+          id="checkbox" />
+        Volar
+
+        <input
+          type="checkbox"
+          name="Superinteligencia"
+          id="checkbox" />
+        Superinteligencia
+
+        <input
+          type="checkbox"
+          name="vista_rayo_laser"
+          id="checkbox" />
+        Vista de rayo láser
+        <hr />
+
+        <label for="radio_button"></label>
+        <input
+          type="radio"
+          name="héroe"
+          id="radio_button" />
+        Héroe / Heroina
+        <input
+          type="radio"
+          name="villano" />
+
+        <button type="submit">Añadir</button>
+        Villano / Villana
       </form>
     </section>
   </body>
