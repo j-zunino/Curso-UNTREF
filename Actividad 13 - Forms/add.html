@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,6 +5,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>SuperHeroes</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       href="./css/style.css" />
@@ -19,9 +28,8 @@
         <img
           src="./img/logo.svg"
           alt="Logo" />
-        <p>Nombre Tienda</p>
+        <a href="./index.html">Nombre tienda</a>
       </section>
-
       <nav class="shadow">
         <ul>
           <li><a href="#">Contacto</a></li>
@@ -31,80 +39,98 @@
       </nav>
     </header>
 
-    <section>
-      <h1>Añadí tu super!</h1>
-      <p>Agrea tu personaje favorito completando las opciones.</p>
-
-      <form
-        action="#"
-        method="get">
-        <label for="name">Nombre</label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          required />
-        <label for="specie">Especie</label>
-        <select
-          name="specie"
-          id="specie"
-          aria-placeholder="Especie"
-          required>
-          <option value="1">asd</option>
-        </select>
-
-        <label for="date">Fecha</label>
-        <input
-          type="date"
-          name="date"
-          id="date"
-          required />
-
-        <label for="file">Agregar una imagen</label>
-        <input
-          type="file"
-          name="file"
-          id="file"
-          required />
-
-        <textarea
-          name="text_area"
-          id="text_area"
-          placeholder="Descripción"></textarea>
-
-        <label for="checkbox">Poderes</label>
-        <input
-          type="checkbox"
-          name="volar"
-          id="checkbox" />
-        Volar
-
-        <input
-          type="checkbox"
-          name="Superinteligencia"
-          id="checkbox" />
-        Superinteligencia
-
-        <input
-          type="checkbox"
-          name="vista_rayo_laser"
-          id="checkbox" />
-        Vista de rayo láser
-        <hr />
-
-        <label for="radio_button"></label>
-        <input
-          type="radio"
-          name="héroe"
-          id="radio_button" />
-        Héroe / Heroina
-        <input
-          type="radio"
-          name="villano" />
-
-        <button type="submit">Añadir</button>
-        Villano / Villana
-      </form>
-    </section>
+    <main>
+      <section class="form_container">
+        <h1>Añadí tu super!</h1>
+        <p>Agrega tu personaje favorito completando las opciones.</p>
+        <form
+          action="#"
+          method="get">
+          <div class="fieldsets">
+            <fieldset class="left">
+              <label for="name">Nombre</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required />
+              <label for="date">Fecha</label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                required />
+              <textarea
+                name="text_area"
+                id="text_area"
+                placeholder="Descripción"></textarea>
+            </fieldset>
+            <fieldset class="right">
+              <label for="specie">Especie</label>
+              <select
+                name="specie"
+                id="specie"
+                aria-placeholder="Especie"
+                required>
+                <option value="1">Humano</option>
+                <option value="2">Extraterrestre</option>
+                <option value="3">Mutante</option>
+              </select>
+              <label for="file">Agregar una imagen</label>
+              <input
+                type="file"
+                name="file"
+                id="file"
+                required />
+              <label for="poderes">Poderes</label>
+              <div class="option-group">
+                <input
+                  type="checkbox"
+                  name="volar"
+                  id="volar" />
+                <label for="volar">Volar</label>
+              </div>
+              <div class="option-group">
+                <input
+                  type="checkbox"
+                  name="superinteligencia"
+                  id="superinteligencia" />
+                <label for="superinteligencia">Superinteligencia</label>
+              </div>
+              <div class="option-group">
+                <input
+                  type="checkbox"
+                  name="vista_rayo_laser"
+                  id="vista_rayo_laser" />
+                <label for="vista_rayo_laser">Vista de rayo láser</label>
+              </div>
+              <hr />
+              <label for="tipo_personaje">Tipo de personaje</label>
+              <div class="option-group">
+                <input
+                  type="radio"
+                  name="tipo_personaje"
+                  id="héroe"
+                  value="héroe"
+                  checked />
+                <label for="héroe">Héroe / Heroina</label>
+              </div>
+              <div class="option-group">
+                <input
+                  type="radio"
+                  name="tipo_personaje"
+                  id="villano"
+                  value="villano" />
+                <label for="villano">Villano / Villana</label>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit">Añadir</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a FRONT END</p>
+    </footer>
   </body>
 </html>
