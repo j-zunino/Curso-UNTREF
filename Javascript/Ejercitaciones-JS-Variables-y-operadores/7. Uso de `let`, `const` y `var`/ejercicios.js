@@ -6,7 +6,7 @@
   let variable = 'hello world'
 }
 
-// console.log(variable)
+console.log(variable)
 
 const PI = 3.14159
 
