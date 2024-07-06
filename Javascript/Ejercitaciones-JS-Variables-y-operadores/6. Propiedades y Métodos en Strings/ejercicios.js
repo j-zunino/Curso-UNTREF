@@ -14,7 +14,12 @@ console.log('Frase cortada: ' + frase.slice(0, 10))
 
 const nombre_completo = '   Juan Pérez   '
 
-console.log('Espacios sin cortar: ' + nombre_completo + 'Espacios cortados: ' + nombre_completo.trim(' '))
+console.log(
+  'Espacios sin cortar: ' +
+    nombre_completo +
+    'Espacios cortados: ' +
+    nombre_completo.trim(' ')
+)
 
 const cancion = 'Twinkle, twinkle, little star'
 
