@@ -20,7 +20,7 @@ if (isNaN(base) || isNaN(exponente)) {
     }
   }
 
-  // prettier-ignore
   console.log(
-    `El resultado de la potencia ${base}^${exponente} es: ${resultado}.`)
+    `El resultado de la potencia ${base}^${exponente} es: ${resultado}.`
+  )
 }
