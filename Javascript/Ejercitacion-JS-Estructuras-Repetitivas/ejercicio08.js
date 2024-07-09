@@ -1,9 +1,6 @@
 // Ejercicio 8
 // Obtener el resto de la división entera a%b de dos números enteros positivos mediante restas.
 
-// Ejercicio 6
-// Realizar la división entera a/b de dos valores enteros positivos mediante restas.
-
 const prompt = require('prompt-sync')()
 
 let dividendo = parseInt(prompt('Ingrese el dividendo: '))
