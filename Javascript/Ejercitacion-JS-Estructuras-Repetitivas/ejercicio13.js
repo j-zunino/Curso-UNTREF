@@ -18,11 +18,9 @@ do {
       console.log('Saliendo...')
       break
     } else if (numeroInput > 0) {
-      console.log('positivo')
       positivo += numeroInput
       contadorPositivo++
     } else {
-      console.log('negativo')
       negativo += numeroInput
       contadorNegativo++
     }
@@ -35,4 +33,4 @@ negativo = contadorNegativo > 0 ? negativo / contadorNegativo : 0
 
 // prettier-ignore
 console.log(`Media de números positivos: ${(positivo).toFixed(2)}
-Media negativos: ${Math.abs((negativo)).toFixed(2)}`)
+Media números negativos: ${Math.abs((negativo)).toFixed(2)}`)
