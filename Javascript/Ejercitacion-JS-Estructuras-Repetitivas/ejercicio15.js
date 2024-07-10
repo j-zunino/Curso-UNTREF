@@ -5,9 +5,9 @@
 // • Mayor que 100.
 // • Menor que 10.000.
 
-do {
-  const prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')()
 
+do {
   const numeroInput = parseInt(prompt('Ingrese un número: '))
 
   if (isNaN(numeroInput)) {
