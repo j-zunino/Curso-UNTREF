@@ -2,8 +2,6 @@
 // tasas de crecimiento de la población son de 2% y 3% respectivamente. Desarrollar un algoritmo para
 // informar en que año la población del país B supera a la de A.
 
-const prompt = require('prompt-sync')()
-
 let paisA = 25
 let paisB = 19.9
 let año = 1994
