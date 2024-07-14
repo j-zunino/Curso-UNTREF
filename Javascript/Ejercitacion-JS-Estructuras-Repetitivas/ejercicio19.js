@@ -45,4 +45,4 @@ while (true) {
 }
 
 console.log(`Valor incorrectos ingresado: ${valoresIncorrectos.join(', ')}
-Valores correctos ingresador: ${valoresCorrectos.join(', ')}`)
+Valores correctos ingresados: ${valoresCorrectos.join(', ')}`)
