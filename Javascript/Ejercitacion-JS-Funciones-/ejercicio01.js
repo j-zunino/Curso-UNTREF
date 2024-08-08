@@ -4,7 +4,7 @@
 
 const prompt = require('prompt-sync')()
 
-const suma = () => {
+const suma = (numA, numB) => {
   console.log(`Números a sumar: ${numA}, ${numB}`)
   console.log(`El resultado de la suma es: ${numA + numB}`)
 }
