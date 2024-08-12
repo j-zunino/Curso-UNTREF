@@ -5,18 +5,18 @@
 const prompt = require('prompt-sync')();
 
 const checkCase = (letra) => {
-  if (letra === !letra.toLowerCase()) {
-    return console.log('Letra mayúscula.');
-  } else {
-    return console.log(
-      `Letra minúscula, convertida a mayúscula: ${letra.toUpperCase()}`
-    );
-  }
+    if (letra === !letra.toLowerCase()) {
+        return console.log('Letra mayúscula.');
+    } else {
+        return console.log(
+            `Letra minúscula, convertida a mayúscula: ${letra.toUpperCase()}`
+        );
+    }
 };
 
 let input = '';
 
 do {
-  input = prompt('Ingrese una letra: ');
-  checkCase(input);
+    input = prompt('Ingrese una letra: ');
+    checkCase(input);
 } while (input.length !== 1);

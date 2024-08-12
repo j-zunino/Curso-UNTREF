@@ -5,23 +5,23 @@
 const prompt = require('prompt-sync')();
 
 const menorMayor = (a, b) => {
-  let temp;
-  if (a > b) {
-    temp = a;
-    a = b;
-    b = temp;
-  }
-  return [a, b];
+    let temp;
+    if (a > b) {
+        temp = a;
+        a = b;
+        b = temp;
+    }
+    return [a, b];
 };
 
 const sortNum = (A, B, C) => {
-  [A, B] = menorMayor(A, B);
+    [A, B] = menorMayor(A, B);
 
-  [A, C] = menorMayor(A, C);
+    [A, C] = menorMayor(A, C);
 
-  [B, C] = menorMayor(B, C);
+    [B, C] = menorMayor(B, C);
 
-  return console.log(A, B, C);
+    return console.log(A, B, C);
 };
 
 const A = parseInt(prompt('Ingrese el primer número: '));

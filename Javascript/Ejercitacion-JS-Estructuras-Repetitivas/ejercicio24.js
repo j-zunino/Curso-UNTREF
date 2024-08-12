@@ -14,35 +14,35 @@
 // │ Egreso      │ 60        │ 55             │ NO ALCANZA     │
 // └─────────────┴───────────┴────────────────┴────────────────┘
 
-let stock = 50
-let stockIngreso = 0
-let stockEgreso = 0
+let stock = 50;
+let stockIngreso = 0;
+let stockEgreso = 0;
 
-const max = 20
-const min = -20
+const max = 20;
+const min = -20;
 for (let i = 0; i < 50; i++) {
-  let N = Math.round(Math.random() * (max - min)) + min
+    let N = Math.round(Math.random() * (max - min)) + min;
 
-  if (N < 0 && stock === 0) {
-    console.log('NO ALCANZA: El galpón esta vació.')
-  } else if (N < 0 && stock < Math.abs(N)) {
-    // prettier-ignore
-    console.log(`NO ALCANZA: Se lleva todo lo que hay (${stock}) y el galpón queda vacío`)
-    stockEgreso += stock
-    stock = 0
-  } else {
-    if (N < 0) {
-      console.log(`Quitando ${N} del stock de ${stock}`)
-      N = Math.abs(N)
-      stock -= N
-      stockEgreso += N
-    } else if (N > 0) {
-      console.log(`Agregando ${N} al stock de ${stock}`)
-      stock += N
-      stockIngreso += N
+    if (N < 0 && stock === 0) {
+        console.log('NO ALCANZA: El galpón esta vació.');
+    } else if (N < 0 && stock < Math.abs(N)) {
+        // prettier-ignore
+        console.log(`NO ALCANZA: Se lleva todo lo que hay (${stock}) y el galpón queda vacío`)
+        stockEgreso += stock;
+        stock = 0;
+    } else {
+        if (N < 0) {
+            console.log(`Quitando ${N} del stock de ${stock}`);
+            N = Math.abs(N);
+            stock -= N;
+            stockEgreso += N;
+        } else if (N > 0) {
+            console.log(`Agregando ${N} al stock de ${stock}`);
+            stock += N;
+            stockIngreso += N;
+        }
     }
-  }
 }
 console.log(`Stock final: ${stock}
 Stock ingresado ${stockIngreso}
-Stock egresado ${stockEgreso}`)
+Stock egresado ${stockEgreso}`);

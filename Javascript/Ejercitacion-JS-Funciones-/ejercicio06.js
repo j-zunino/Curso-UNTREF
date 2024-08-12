@@ -5,9 +5,9 @@
 const prompt = require('prompt-sync')();
 
 const mayorDeTres = (num1, num2, num3) => {
-  const mayor = Math.max(num1, num2, num3);
+    const mayor = Math.max(num1, num2, num3);
 
-  return console.log(`El número mayor es: ${mayor}`);
+    return console.log(`El número mayor es: ${mayor}`);
 };
 
 const numA = parseInt(prompt('Ingrese el primer número: '));

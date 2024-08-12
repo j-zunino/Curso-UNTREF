@@ -4,14 +4,14 @@
 // En ambos regímenes, si la nota de presentación es menor que 3.5, reprueba.
 // Hacer la tabla de decisión y escribir el algoritmo correspondiente.
 
-const prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')();
 
 const carrera = prompt(
-  'Ingrese la carrera del estudiante,(a: diurnas, b: vespertinas): '
-).toLowerCase()
+    'Ingrese la carrera del estudiante,(a: diurnas, b: vespertinas): '
+).toLowerCase();
 const nota = parseFloat(
-  prompt('Ingrese la nota de presentación del estudiante (0 - 10): ')
-)
+    prompt('Ingrese la nota de presentación del estudiante (0 - 10): ')
+);
 
 // prettier-ignore
 if ((carrera !== 'a' && carrera !== 'b') || isNaN(nota) || nota < 0 || nota > 10) {

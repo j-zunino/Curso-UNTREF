@@ -5,8 +5,8 @@
 const prompt = require('prompt-sync')();
 
 const suma = (numA, numB, numC) => {
-  numC = numA + numB;
-  return numC;
+    numC = numA + numB;
+    return numC;
 };
 
 const numA = parseInt(prompt('Ingrese el primer número a sumar: '));

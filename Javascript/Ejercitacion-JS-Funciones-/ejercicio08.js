@@ -5,37 +5,37 @@
 const prompt = require('prompt-sync')();
 
 const divisores = (num) => {
-  let cantDivisores = 0;
-  for (let i = 1; i <= num; i++) {
-    if (num % i === 0) {
-      console.log(`${i} es divisor de ${num}.`);
-      cantDivisores++;
+    let cantDivisores = 0;
+    for (let i = 1; i <= num; i++) {
+        if (num % i === 0) {
+            console.log(`${i} es divisor de ${num}.`);
+            cantDivisores++;
+        }
     }
-  }
-  console.log(`Cantidad de divisores: ${cantDivisores}.`);
+    console.log(`Cantidad de divisores: ${cantDivisores}.`);
 };
 
 const factorial = (num) => {
-  let resultado = 1;
-  for (let i = 1; i <= num; i++) {
-    resultado *= i;
-  }
-  return console.log(`El factorial de ${num} es: ${resultado}`);
+    let resultado = 1;
+    for (let i = 1; i <= num; i++) {
+        resultado *= i;
+    }
+    return console.log(`El factorial de ${num} es: ${resultado}`);
 };
 
 const esPrimo = (num) => {
-  if (num % 2 === 0) {
-    console.log(`El número ${num} es par.`);
-  } else {
-    console.log(`El número ${num} es impar.`);
-  }
+    if (num % 2 === 0) {
+        console.log(`El número ${num} es par.`);
+    } else {
+        console.log(`El número ${num} es impar.`);
+    }
 };
 
 const tablaMultiplicar = (num) => {
-  console.log(`Tabla de multiplicar del ${num}`);
-  for (let i = 1; i <= 10; i++) {
-    console.log(`${num} x ${i} = ${num * i}`);
-  }
+    console.log(`Tabla de multiplicar del ${num}`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${num} x ${i} = ${num * i}`);
+    }
 };
 
 const num = parseInt(prompt('Ingrese un número: '));

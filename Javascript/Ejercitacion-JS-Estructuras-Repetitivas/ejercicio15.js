@@ -5,24 +5,28 @@
 // • Mayor que 100.
 // • Menor que 10.000.
 
-const prompt = require('prompt-sync')()
+const prompt = require('prompt-sync')();
 
 do {
-  const numeroInput = parseInt(prompt('Ingrese un número: '))
+    const numeroInput = parseInt(prompt('Ingrese un número: '));
 
-  if (isNaN(numeroInput)) {
-    console.log('ERROR: Dato ingresado no valido.')
-  } else {
-    if (
-      numeroInput % 2 === 0 &&
-      numeroInput % 5 !== 0 &&
-      numeroInput > 100 &&
-      numeroInput < 10000
-    ) {
-      console.log(`El número ${numeroInput} cumple con todas las condiciones.`)
-      break
+    if (isNaN(numeroInput)) {
+        console.log('ERROR: Dato ingresado no valido.');
     } else {
-      console.log(`El número ${numeroInput} no cumple con las condiciones.`)
+        if (
+            numeroInput % 2 === 0 &&
+            numeroInput % 5 !== 0 &&
+            numeroInput > 100 &&
+            numeroInput < 10000
+        ) {
+            console.log(
+                `El número ${numeroInput} cumple con todas las condiciones.`
+            );
+            break;
+        } else {
+            console.log(
+                `El número ${numeroInput} no cumple con las condiciones.`
+            );
+        }
     }
-  }
-} while (true)
+} while (true);
