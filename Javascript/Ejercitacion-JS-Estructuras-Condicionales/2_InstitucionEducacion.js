@@ -15,13 +15,13 @@ const nota = parseFloat(
 
 // prettier-ignore
 if ((carrera !== 'a' && carrera !== 'b') || isNaN(nota) || nota < 0 || nota > 10) {
-  console.log(`ERROR: Datos incorrectos. carrera: ${carrera} - nota: ${nota}`)
+    console.log(`ERROR: Datos incorrectos. carrera: ${carrera} - nota: ${nota}`)
 } else {
-  if (nota >= 6 && carrera === 'b') {
-    console.log('El estudiante está eximido.')
-  } else if (nota >= 3.5) {
-    console.log('El estudiante rinde examen.')
-  } else if (nota < 3.5) {
-    console.log('Es estudiante reprueba.')
-  }
+    if (nota >= 6 && carrera === 'b') {
+        console.log('El estudiante está eximido.')
+    } else if (nota >= 3.5) {
+        console.log('El estudiante rinde examen.')
+    } else if (nota < 3.5) {
+        console.log('Es estudiante reprueba.')
+    }
 }

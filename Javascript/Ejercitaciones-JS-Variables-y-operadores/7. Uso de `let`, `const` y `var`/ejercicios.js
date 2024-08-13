@@ -3,26 +3,26 @@
 // Ejercicio 7.3: Declara una variable 'mensaje' usando 'var' y asígnale el valor "Hola Mundo". Declara la misma variable 'mensaje' dentro de una función y asígnale un valor diferente. Muestra ambos valores en la consola para ver cómo 'var' afecta el alcance de las variables.
 
 {
-    let variable = 'hello world';
+    const variable = 'hello world'
 }
 
-console.log(variable);
+console.log(variable)
 
-const PI = 3.14158;
+const PI = 3.14158
 
-console.log(PI);
+console.log(PI)
 
-PI = 3.14;
+PI = 3.14
 
-console.log(PI);
+console.log(PI)
 
-var mensaje = 'Hola Mundo';
+const mensaje = 'Hola Mundo'
 
-function cambiar_mensaje() {
-    var mensaje = 'hello World';
-    console.log(mensaje);
+function cambiar_mensaje () {
+    const mensaje = 'hello World'
+    console.log(mensaje)
 }
 
-cambiar_mensaje();
+cambiar_mensaje()
 
-console.log(mensaje);
+console.log(mensaje)

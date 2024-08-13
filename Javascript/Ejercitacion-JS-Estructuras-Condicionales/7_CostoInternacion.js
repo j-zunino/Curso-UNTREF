@@ -11,52 +11,52 @@
 // | 5                  | 138                |
 //
 // Construya un algoritmo que calcule e imprima el costo total que representa un paciente.
-const prompt = require('prompt-sync')();
+const prompt = require('prompt-sync')()
 
 const costoPorDia = {
     1: 125,
     2: 116,
     3: 120,
     4: 132,
-    5: 138,
-};
+    5: 138
+}
 
 const pacientes = [
     {
         nombre: 'Sofia Rodríguez',
         tipoEnfermedad: 1,
-        diasInternacion: 2,
+        diasInternacion: 2
     },
     {
         nombre: 'Martín Gómez',
         tipoEnfermedad: 5,
-        diasInternacion: 23,
+        diasInternacion: 23
     },
     {
         nombre: 'Juan Carlos',
         tipoEnfermedad: 4,
-        diasInternacion: 15,
-    },
-];
+        diasInternacion: 15
+    }
+]
 
-console.log('Lista de pacientes:');
+console.log('Lista de pacientes:')
 
 pacientes.forEach((paciente, index) => {
-    console.log(`${index + 1}. ${paciente.nombre}`);
-});
+    console.log(`${index + 1}. ${paciente.nombre}`)
+})
 
 const paciente =
-    Math.abs(prompt('Ingrese el número del paciente a calcular: ')) - 1;
+    Math.abs(prompt('Ingrese el número del paciente a calcular: ')) - 1
 
 if (paciente >= pacientes.length) {
-    console.log('ERROR: Paciente no encontrado.');
+    console.log('ERROR: Paciente no encontrado.')
 } else {
-    const nombrePaciente = pacientes[paciente].nombre;
-    const tipoEnfermedadPaciente = pacientes[paciente].tipoEnfermedad;
-    const diasInternacionPaciente = pacientes[paciente].diasInternacion;
+    const nombrePaciente = pacientes[paciente].nombre
+    const tipoEnfermedadPaciente = pacientes[paciente].tipoEnfermedad
+    const diasInternacionPaciente = pacientes[paciente].diasInternacion
 
-    const costoDiario = costoPorDia[tipoEnfermedadPaciente];
-    const costoTotal = costoDiario * diasInternacionPaciente;
+    const costoDiario = costoPorDia[tipoEnfermedadPaciente]
+    const costoTotal = costoDiario * diasInternacionPaciente
 
     console.log(`
 - Paciente seleccionado: ${nombrePaciente}
@@ -65,5 +65,5 @@ if (paciente >= pacientes.length) {
 - Dias restantes de internación: ${diasInternacionPaciente}
 
 - Costo diario: ${costoDiario}
-- Costo total: ${costoTotal}`);
+- Costo total: ${costoTotal}`)
 }

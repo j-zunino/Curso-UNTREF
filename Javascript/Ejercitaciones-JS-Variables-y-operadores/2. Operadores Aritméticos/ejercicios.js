@@ -5,14 +5,14 @@
 // - La división de 'a' entre 'b'.
 // - El módulo de 'a' y 'b'.
 
-const a = 5;
-const b = 3;
+const a = 5
+const b = 3
 
-const suma = a + b;
-const resta = a - b;
-const multiplicacion = a * b;
-const division = a / b;
-const modulo = a % b;
+const suma = a + b
+const resta = a - b
+const multiplicacion = a * b
+const division = a / b
+const modulo = a % b
 
 console.log(
     'Suma: ' + suma + ', resta: ' + resta,
@@ -22,4 +22,4 @@ console.log(
         division +
         ', modulo: ' +
         modulo
-);
+)
