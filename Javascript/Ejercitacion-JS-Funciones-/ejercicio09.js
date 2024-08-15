@@ -13,9 +13,6 @@ const prompt = require('prompt-sync')();
 
 const menu = (opcion) => {
     switch (opcion) {
-        case 0:
-            console.log('Saliendo...');
-            break;
         case 1:
             bienvenida();
             break;
