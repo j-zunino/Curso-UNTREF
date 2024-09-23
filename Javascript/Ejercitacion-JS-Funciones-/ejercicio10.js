@@ -60,4 +60,4 @@ console.log(`
 2. Es Fibonacci?"
 `);
 
-menu((opcion = parseInt(prompt('Seleccione una opción (0/2): '))));
+menu((opcion = parseInt(prompt('Seleccione una opción (1/2): '))));
