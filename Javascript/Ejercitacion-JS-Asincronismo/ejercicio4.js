@@ -3,3 +3,18 @@
 // Usa `try` para intentar realizar la operación, y si el divisor es cero, lanza un error manualmente utilizando `throw`.
 // Captura el error en un bloque `catch` y muestra un mensaje de error en la consola.
 // Independientemente del resultado, muestra "Operación finalizada" en la consola dentro de un bloque `finally`.
+
+const dividendo = 34;
+const divisor = 0;
+
+try {
+    if (divisor === 0) {
+        throw new Error('No se puede dividir por 0');
+    }
+
+    console.log(`${dividendo / divisor}`);
+} catch (error) {
+    console.log('Error: ' + error.message);
+} finally {
+    console.log('Operacion finalizada');
+}
